@@ -1,0 +1,216 @@
+@import url('http://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Inter:wght@400;500;600&display=swap');
+
+:root{
+    --bg1: #151828;
+    --bg2: #181F34;
+    --body:#959DCC;
+    --brand:#FFAB76;
+    --white:#fff;
+}
+body{
+   font-family: "Inter",'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   color:var(--body);
+   line-height: 1.8;
+   background-color: var(--bg1);
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: "Dela Gothic One",'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+img{
+    width:100%;
+}
+
+section{
+    padding-top: 160px;
+    padding-bottom: 160px;
+}
+
+/* HERO */
+.hero {
+    background: linear-gradient(to right,#1B1F34,rgba(27,31,52,0.3));
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+.display-3{
+    color: #fff;
+}
+.navbar {
+    background: linear-gradient(to right,#1B1F34,rgba(27,31,52,0.2))
+}
+.navbar-brand {
+    font-family: "Dela Gothic One",'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 32;
+}
+.navbar .navbar-nav .nav-link.active {
+    color: var(--brand);
+}
+/*BUTTON*/
+.btn {
+    padding: 16px 36px;
+    font-family: "Dela Gothic One",'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all 0.4s ease;
+    border-radius:0;
+}
+.btn-brand {
+    background-color: var(--brand);
+}
+.btn-brand:hover {
+    background-color: transparent;
+    color: var(--brand);
+    border-color: var(--brand);
+}
+.btn-outline-brand {
+    background-color: transparent;
+    color: var(--brand);
+    border-color: var(--brand);
+}
+.btn-outline-brand:hover {
+    background-color: var(--brand);
+}
+.margin-r {
+    margin-right: 6px;
+}
+/*PRODUCT CSS*/
+.productHead {
+    color: var(--brand);
+}
+.productHead h1 {
+    text-align: center;
+    padding:10px;
+    margin-top: 100px;
+}
+body{margin-top:20px;}
+.product-rating {
+    line-height: 22px;
+}
+.product-rating i {
+    color: #fc0;
+    display: inline-block;
+    margin-right: 2px;
+    font-size: 14px;
+}
+@media screen and (max-width: 1199px) {
+    .product-rating {
+        margin-bottom: 5px;
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .product-rating i {
+        font-size: 13px;
+    }
+}
+.text-secondary {
+    color: #ffff !important;
+}
+.card-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+.card-wrapper .card-img {
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease-out;
+}
+.card-wrapper .card-img img {
+    transition: all 0.3s ease-in-out;
+    border-radius: 0.25rem;
+    border-radius: 0.25rem;
+}
+.card-wrapper .card-body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    visibility: hidden;
+    padding: 30px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.25rem;
+    transform: translateX(-100%);
+    transition: 0.8s;
+    z-index: 11;
+}
+.card-wrapper:before {
+    content: "";
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 100%;
+    z-index: 9;
+    transition: 0.8s;
+    background: rgba(0, 186, 238, 0.82);
+    border-radius: 0.25rem;
+}
+.card-wrapper:hover:before {
+    right: 0;
+}
+.card-wrapper h3,
+.card-wrapper p {
+    color: #fff;
+}
+.card-wrapper .read-more {
+    color: #fff;
+}
+.card-wrapper .read-more:after {
+    color: #fff;
+}
+.card-wrapper:hover .card-body {
+    visibility: visible;
+    transform: translateX(0px);
+}
+.card-wrapper:hover .backgound-color {
+    right: 0;
+}
+.ti-shopping-cart:before {
+    content: "\e60d";
+}
+.mb-2-6, .my-2-6 {
+    margin-bottom: 2.6rem;
+}
+.text-primary {
+    color: var(--brand) !important;
+}
+
+/*SIGN-UP*/
+.signup-form {
+    border: 1px solid var(--brand);
+}
+.login-form {
+    border: 1px solid var(--brand);
+}
+.panel-heading {
+    color: var(--brand);
+}
+
+.submit-signup {
+    margin-top: 10px;
+}
+.gender {
+    padding-right: 4px;
+}
+
+.user-img{
+    height: 400px;
+    width: 350px;
+}
+.contain-one {
+    margin-top:76px;
+}
+.user-infor {
+    color: #fff;
+    margin-top: 20px;
+}
+.home-cover{
+    color: #fff;
+}
+.h-custom {
+    margin-top: 30px;
+}
