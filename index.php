@@ -1,4 +1,7 @@
+
 <?php
+include'header.php';
+
     // Check the 'page' parameter in the URL and load the corresponding content
     $page = isset($_GET['page']) ? $_GET['page'] : 'home';
 
@@ -18,8 +21,11 @@
         case 'signup':
           include('signup.php');
           break;
-          case 'users':
+        case 'users':
             include('users.php');
+            break;
+        case 'blog':
+            include('blog.php');
             break;
         default:
             include('home.php'); // Default to home if 'page' parameter is not recognized

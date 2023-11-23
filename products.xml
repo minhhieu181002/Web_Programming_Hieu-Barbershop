@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<PRODUCTS>
+  <PRODUCT>
+    <TITLE>Trimmer NT Giao Lac 218</TITLE>
+    <PRICE>$40</PRICE>
+    <IMAGE>trimmer ntgiaolac img1.jpg</IMAGE>
+  </PRODUCT>
+  <PRODUCT>
+    <TITLE>Hair-Clipper Kemei 1977</TITLE>
+    <PRICE>$70</PRICE>
+    <IMAGE>kemei 1977 img2.jpg</IMAGE>
+  </PRODUCT>
+  <PRODUCT>
+    <TITLE>High Quality Scissors NTGiaolac Stainless Steel NT-103</TITLE>
+    <PRICE>$29</PRICE>
+    <IMAGE>keo nt103 img2.jpg</IMAGE>
+  </PRODUCT>
+  <PRODUCT>
+    <TITLE>Large men haircut comb 2021</TITLE>
+    <PRICE>$9</PRICE>
+    <IMAGE>luoc ban to 2021 img2.jpg</IMAGE>
+  </PRODUCT>
+  <PRODUCT>
+    <TITLE>Reuzel Clay Matte Pomade</TITLE>
+    <PRICE>$12</PRICE>
+    <IMAGE>Reuzel Clay Matte Pomade img2.jpg</IMAGE>
+  </PRODUCT>
+  <PRODUCT>
+    <TITLE>Top cutting comb</TITLE>
+    <PRICE>$5</PRICE>
+    <IMAGE>luoc cat top img2.jpg</IMAGE>
+  </PRODUCT>
+</PRODUCTS>

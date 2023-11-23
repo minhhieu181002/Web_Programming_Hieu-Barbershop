@@ -1,3 +1,4 @@
+<script src="/babershop design/js/validation.js"></script>
 <?php
 // Include the header.php file
 include 'header.php';
@@ -19,7 +20,7 @@ if(isset($_POST['submit'])){
 
     $hashedPassword = password_hash($password,PASSWORD_DEFAULT);
     if(!empty($firstName)&&!empty($lastName)&&!empty($email)&&!empty($password)&&!empty($phone_number)){
-        $sql = "INSERT INTO `users`(`firstName`,`lastName`,`email`,`Password`,`Phone`) VALUES('$firstName','$lastName','$email','$hashedPassword','$phone_number')";
+        $sql = "insert into `users`(firstName,lastName,email,Password,Phone) VALUES('$firstName','$lastName','$email','$hashedPassword','$phone_number')";
         if($conn->query($sql)===TRUE){
             echo "You have registered successfully";
             $flag_success = TRUE;
@@ -54,18 +55,22 @@ if(isset($_POST['submit'])){
                     </div>
                     <div class="form-group">
                         <label for="email">Email</label>
-                        <input type="text" class="form-control" id="email" name="email"/>
+                        <input type="text" class="form-control" id="signUpEmail" name="email"/>
                     </div>
                     <div class="form-group">
                         <label for="password">Password</label>
-                        <input type="password" class="form-control" id="password" name="password"/>
+                        <input type="password" class="form-control" id="signUpPassword" name="password"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Confirm Password</label>
+                        <input type="password" class="form-control" id="signUpConfirmPassword" name="password"/>
                     </div>
                     <div class="form-group">
                         <label for="phone-number">Phone number</label>
                         <input type="text" class="form-control" id="phone-number" name="phone_number"/>
                     </div>   
                     <div >
-                    <input type="submit" class="btn btn-brand submit-signup" value="Submit" name="submit">
+                    <input type="submit" onclick="return validateSignupForm();" class="btn btn-brand submit-signup" value="Submit" name="submit">
                     <?php
                         if($flag_success===TRUE){
                     ?>

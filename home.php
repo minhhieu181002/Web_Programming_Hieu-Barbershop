@@ -24,7 +24,7 @@
                 <a class="nav-link" href="#team">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#blog">Blogs</a>
+                <a class="nav-link" href="index.php?page=blog">Blogs</a>
               </li>
               
             </ul>

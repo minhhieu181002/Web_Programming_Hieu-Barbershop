@@ -15,7 +15,7 @@ $password = $_POST["password"];
 // Sanitize the email input (prevents SQL injection)
 $email = $conn->real_escape_string($email);
 // Retrieve the user's hashed password from the database
-$query = "SELECT ID, email, password FROM users WHERE email = '$email'";
+$query = "SELECT user_id, email, password FROM users WHERE email = '$email'";
 $result = $conn->query($query);
 if ($result->num_rows > 0) {
     $user = $result->fetch_assoc();
@@ -52,3 +52,4 @@ if ($result->num_rows > 0) {
 
 $conn->close();
 ?>
+
